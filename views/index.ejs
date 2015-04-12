@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css">
+  </head>
+  <body>
+    <div class='container'>
+    <h1><%= title %></h1>
+    <table class='table'><tr>
+    <% if(columns) {
+      for(var i=0; i < columns.length; i++) { %>
+    <th><%= columns[i] %></th>
+    <% }
+    } %></tr>
+
+    <% for(var j=0; j < data.length; j++ ) {
+      for(var l=0; l < columns.length; l++) {%>
+      <td><%= data[j][l] %></td>
+    <% } %></tr>
+    <% } %>
+</table>
+  </div>
+  </body>
+</html>
