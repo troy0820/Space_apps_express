@@ -13,12 +13,12 @@
     <form action='/' method='POST'>
       <input type='text'/>
       <input type='hidden' value='<%= tags %>'/>
-      <input type='submit' value='generate'/>
-    </form>
+	<button class='btn btn-secondary'>Search</button>
+    </form><br/>
     <ul class='list-inline'>
-      <% for(var t=0; t < tags.length; t++){ %>
-        <li><b><%= tags[t] %></b></li>
-        <% } %>
+      <% for(var t=0; t < tags.length; t++){  %>
+        <li><button class='btn btn-primary' style="padding:5px;"><%= tags[t] %> +1</button></li>
+        <%  } %>
       </ul>
     <table class='table'><tr>
     <% if(columns) {
