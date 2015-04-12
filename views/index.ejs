@@ -8,11 +8,16 @@
   </head>
   <body>
     <div class='container'>
-    <h1><i class="fa fa-globe"></i> <%= title %></h1>
+    <h1 class='text-capitalize'><i class="fa fa-globe"></i> <%= title.toLowerCase() %></h1>
     <h2>Keywords:</h2>
+    <form action='/' method='POST'>
+      <input type='text'/>
+      <input type='hidden' value='<%= tags %>'/>
+      <input type='submit' value='generate'/>
+    </form>
     <ul class='list-inline'>
       <% for(var t=0; t < tags.length; t++){ %>
-        <li><b><%= tags[t] %></b></li> 
+        <li><b><%= tags[t] %></b></li>
         <% } %>
       </ul>
     <table class='table'><tr>
