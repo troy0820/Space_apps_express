@@ -8,7 +8,13 @@
   </head>
   <body>
     <div class='container'>
-    <h1><%= title %></h1>
+    <h1><i class="fa fa-globe"></i> <%= title %></h1>
+    <h2>Keywords:</h2>
+    <ul class='list-inline'>
+      <% for(var t=0; t < tags.length; t++){ %>
+        <li><%= tags[t] %></li>
+        <% } %>
+      </ul>
     <table class='table'><tr>
     <% if(columns) {
       for(var i=0; i < columns.length; i++) { %>
@@ -23,11 +29,7 @@
     <% } %>
 </table>
 
-  <ul class='list-unstyled'>
-    <% for(var t=0; t < tags.length; t++){ %>
-      <li><%= tags[t] %></li>
-      <% } %>
-    </ul>
+
   </div>
   </body>
 </html>

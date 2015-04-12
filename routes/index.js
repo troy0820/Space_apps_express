@@ -14,7 +14,8 @@ router.get('/', function(req, res) {
     var columns = _.pluck(cols, 'name');
     var data = JSON.parse(body).data;
     var tags = JSON.parse(body).meta.view.tags;
-    res.render('index', { columns: columns, title:'Open Data', data:data,tags:tags });
+    var title = JSON.parse(body).meta.view.name;
+    res.render('index', { columns: columns, title:title, data:data,tags:tags });
   })
 
 });
