@@ -13,7 +13,8 @@ router.get('/', function(req, res) {
     var cols = JSON.parse(body).meta.view.columns;
     var columns = _.pluck(cols, 'name');
     var data = JSON.parse(body).data;
-    res.render('index', { columns: columns, title:'Open Data', data:data });
+    var tags = JSON.parse(body).meta.view.tags;
+    res.render('index', { columns: columns, title:'Open Data', data:data,tags:tags });
   })
 
 });
