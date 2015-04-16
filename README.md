@@ -1,4 +1,4 @@
-#Space Apps 
+#Space Apps [![Build Status](https://travis-ci.org/troy0820/Space_apps_express.svg?branch=master)](https://travis-ci.org/troy0820/Space_apps_express) 
 
 ##Space Apps challenge using express
 
