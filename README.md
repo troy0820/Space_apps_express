@@ -1,4 +1,5 @@
-#Space Apps [![Build Status](https://travis-ci.org/troy0820/Space_apps_express.svg?branch=master)](https://travis-ci.org/troy0820/Space_apps_express) 
+#Space Apps
+ [![Build Status](https://travis-ci.org/troy0820/Space_apps_express.svg?branch=master)](https://travis-ci.org/troy0820/Space_apps_express) 
 
 ##Space Apps challenge using express
 
@@ -16,3 +17,4 @@ git clone git@github.com:troy0820/Space_apps_express.git
 cd Space_apps_express
 npm install
 ```
+
