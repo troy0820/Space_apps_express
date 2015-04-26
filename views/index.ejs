@@ -18,7 +18,7 @@
     </form><br/>
     <ul class='list-inline'>
       <% for(var t=0; t < tags.length; t++){  %>
-        <li><button class='btn btn-primary' style="padding:5px;"><%= tags[t] %> +1</button></li>
+        <li><button class='btn btn-primary' value="<%= tags[t] %>"style="padding:5px;"><%= tags[t] %> +1</button></li>
         <%  } %>
       </ul>
     <table class='table'><tr>
