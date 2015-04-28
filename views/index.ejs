@@ -20,6 +20,11 @@
         <li><button class='btn btn-primary' value="<%= tags[t] %>"style="padding:5px;"><%= tags[t] %> +1</button></li>
         <%  } %>
       </ul>
+      <script type="text/javascript">
+      $(':button').click(function() {
+        console.log('button ', this.value);
+      })
+      </script>
     <table class='table'><tr>
     <% if(columns) {
       for(var i=0; i < columns.length; i++) { %>
