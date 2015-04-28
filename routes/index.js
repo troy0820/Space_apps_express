@@ -3,7 +3,7 @@ var router = express.Router();
 var request = require('request');
 var _ = require('lodash');
 
-/* GET home page. */
+
 router.get('/', function(req, res) {
   var url = "https://data.oregon.gov/api/views/7zxm-9fbf/rows.json";
   request.get(url, function(err,response,body) {
