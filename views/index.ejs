@@ -22,7 +22,15 @@
       </ul>
       <script type="text/javascript">
       $(':button').click(function() {
-        console.log('button ', this.value);
+        var val = this.value;
+        $.ajax({
+          method:"POST",
+          url: "/",
+          data:{ val: val }
+        })
+        .done(function(msg) {
+          console.log("You clicked "+ msg)
+        })
       })
       </script>
     <table class='table'><tr>
