@@ -16,7 +16,7 @@ router.get('/', function(req, res) {
     var tags = JSON.parse(body).meta.view.tags;
     var title = JSON.parse(body).meta.view.name;
     res.render('index', { columns: columns, title:title, data:data,tags:tags });
-  })
+   })
 
 });
 
