@@ -23,6 +23,8 @@
       <script type="text/javascript">
       $(':button').click(function() {
         var val = this.value;
+        this.disabled = true;
+        $(this).text(this.value +' +2');
         $.ajax({
           method:"POST",
           url: "/",
