@@ -20,8 +20,9 @@ router.get('/', function(req, res) {
 
 });
 
-router.post('/',function(req,res){
-	res.send(req.body.val);
+router.post('/',function(req,res) { 
+	var button = req.body.val;
+	res.send(button);
 });
 
 module.exports = router;
