@@ -25,6 +25,7 @@
         var val = this.value;
         this.disabled = true;
         $(this).text(this.value +' +2');
+        $(this).fadeOut("slow");
         $.ajax({
           method:"POST",
           url: "/",
