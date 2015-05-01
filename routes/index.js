@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var request = require('request');
 var _ = require('lodash');
-
+var buttons = [];
 
 router.get('/', function(req, res) {
   var url = "https://data.oregon.gov/api/views/7zxm-9fbf/rows.json";
@@ -22,7 +22,8 @@ router.get('/', function(req, res) {
 
 router.post('/',function(req,res) { 
 	var button = req.body.val;
-	res.send(button);
+	buttons.push(button);
+	res.send(buttons);
 });
 
 module.exports = router;
