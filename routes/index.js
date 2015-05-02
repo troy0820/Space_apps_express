@@ -22,8 +22,11 @@ router.get('/', function(req, res) {
 
 router.post('/',function(req,res) { 
 	var button = req.body.val;
+  if(buttons) {
 	buttons.push(button);
-	res.send(buttons);
+  var num = buttons.length;
+	res.send(buttons[num-1]);
+  }
 });
 
 module.exports = router;
