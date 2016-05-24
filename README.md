@@ -17,4 +17,9 @@ git clone git@github.com:troy0820/Space_apps_express.git
 cd Space_apps_express
 npm install
 ```
+###To run in a Docker Container 
 
+```bash
+docker build -t space .
+docker run -p 3000:3000 -e PORT=3000 space
+```
